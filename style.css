@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Light-Gray);
+    
+}
+main{
+    margin-top: 3.5rem;
+    width: 39ch;
+    padding: 3rem;
+}
+.title-unbold{
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+h2{
+    font-size: 1.477rem;
+    font-weight: 600;
+    opacity: 0.7;
+}
+p{
+    color: var(--Grayish-Blue);
+    text-align: start;
+    font-size: 0.9rem;
+}
+.box{
+    background-color: white;
+    text-align: start;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px var(--Very-Dark-Blue);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-top: 0.35rem solid var(--Cyan);
+    height: 15rem;
+    position: relative;
+}
+.box:nth-of-type(1){
+    margin-top: 2rem;
+}
+.box:nth-of-type(2){
+    border-top: 0.35rem solid var(--Red);
+
+}
+.box:nth-of-type(3){
+    border-top: 0.35rem solid var(--Orange);
+}
+.box:nth-of-type(4){
+    border-top: 0.35rem solid var(--Blue);
+}
+img{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution{
+    margin-top: 20rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.attribution{
+    text-align: center;
+    color: rgb(20, 131, 90);
+}
+.attribution a{
+    color: rgb(7, 63, 85);
+    text-decoration: none;
+    font-weight: 700;
+}
+@media (min-width:1400px){
+    main{
+        width: 40rem;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .title-unbold{
+        font-size: 2.4rem;
+    }
+    h2{
+        font-size: 2.4rem;
+    }
+    .grider{
+        display: grid;
+        grid-template-columns: repeat(3, 23rem);
+        grid-template-rows: repeat(4,7rem);
+        gap: 2rem;
+        transform: translateX(-54%);
+        margin-top: 5rem;
+        
+    }
+    .box:nth-of-type(1){
+        grid-row: 2;
+        overflow: hidden;
+        margin-top: 1rem;
+    }
+    .box:nth-of-type(4){
+        grid-row-start: 2;
+        grid-column: 3;
+    }
+    .box:nth-of-type(2){
+        grid-column: 2;
+    }
+    .box:nth-of-type(3){
+        grid-row: -3;
+        grid-column: 2;
+    }
+    
+}
